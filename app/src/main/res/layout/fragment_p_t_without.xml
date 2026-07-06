@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragments"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.fragments.PTFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rv_program_history"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        tools:listitem="@layout/item_training"
+        tools:itemCount="2"
+        android:layout_marginStart="@dimen/_48dp"
+        app:layout_constraintEnd_toStartOf="@+id/add_fab"
+        android:layout_marginEnd="@dimen/_8dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddProg"
+        android:text="@string/add_program"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/add_fab"
+        android:layout_width="@dimen/_56dp"
+        android:layout_height="@dimen/_56dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add_program"
+        app:fabSize="normal"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/app_name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_machine"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="@dimen/_12dp"
+    app:cardBackgroundColor="@color/cod_gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_machine"
+        android:src="@drawable/ic_kayak"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_machine_name"
+            android:text="@string/kayak"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_below="@+id/iv_machine"
+            android:textSize="@dimen/_11ssp"
+            android:paddingBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_selected_machine"
+            android:layout_margin="@dimen/_2dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_selected_machine"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

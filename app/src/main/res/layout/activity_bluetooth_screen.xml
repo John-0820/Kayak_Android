@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragments"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_460sdp"
+        android:layout_height="@dimen/_280sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="@dimen/_460sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_5sdp"
+                android:fontFamily="@font/bricolage_grotesque_regular"
+                android:text="FIND NEARBY DEVICES"
+                android:id="@+id/find_nearby_devices"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/_7sdp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/_460sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/bg_new_black">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:gravity="center">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/focus"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_fileName="pluse.json" />
+
+                        <ImageView
+                            android:id="@+id/ivRefresh"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:src="@drawable/ic_bluetooth_pulse" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingTop="@dimen/_60sdp"
+                            android:text="Tap to scan"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_5sdp"/>
+                    </FrameLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_width="@dimen/_350sdp"
+                    android:layout_height="@dimen/_90sdp">
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_findDevice">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_bluetooth"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/tvdata"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:padding="@dimen/_3sdp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_5ssp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_5sdp"
+            android:fontFamily="@font/bricolage_grotesque_regular"
+            android:text="SELECT MACHINE"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/_5sdp"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/_7sdp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_460sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_460sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:id="@+id/card_kayak"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_kayak"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="KAYAK ERGOMETER"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_canoe"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_canoe"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="CANOE"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_dragonboat"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_dragonboat"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="DRAGONBOAT"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_outrigger"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_outrigger"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="OUTRIGGER"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_460sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:id="@+id/card_swimfast"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_swimfast"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="SWIMFAST"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_skifast"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_skifast"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="SKIFAST"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_sup"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/card_selector"
+                    android:gravity="center_horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_small_sup"
+                        android:tint="@color/card_icon_selector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="SUP"
+                        android:textColor="@color/card_icon_selector"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_5sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Proceed"
+                android:shadowRadius="4"
+                android:textColor="@color/black"
+                app:cornerRadius="@dimen/_8dp"
+                app:backgroundTint="#89F05B"
+                app:layout_constraintCircleRadius="@dimen/_24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

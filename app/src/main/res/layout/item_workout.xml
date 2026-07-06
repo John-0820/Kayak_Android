@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cl_machine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:elevation="@dimen/_2sdp"
+        app:cardBackgroundColor="#0D0F10"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_name"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6dp"
+                android:layout_weight="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/segment"
+                    android:fontFamily="@font/bricolage_grotesque_regular"
+                    android:textSize="@dimen/_10ssp"
+                    android:id="@+id/tv_serial_num"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="@color/white"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="@dimen/_60sdp"
+                android:layout_weight="1.5"
+                android:layout_marginStart="@dimen/_10dp"
+                app:layout_constraintStart_toEndOf="@+id/cl_name">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tv_workout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/bg_new_input_text"
+                    android:fontFamily="@font/bricolage_grotesque_regular"
+
+                    android:paddingLeft="@dimen/_8dp"
+                    android:paddingRight="@dimen/_8dp"
+                    android:inputType="textImeMultiLine"
+                    android:maxLength="25"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:hint="@string/name_workout"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:layout_constraintStart_toEndOf="@+id/cl_clock">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_workout_time"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_26sdp"
+                        android:background="@drawable/bg_new_input_text"
+                        android:focusable="false"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:textColorHint="@color/white"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:gravity="center"
+                        android:inputType="text"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/spinnerTime"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_80sdp"
+                        android:minHeight="@dimen/_26sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/et_workout_time"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        style="@style/SpinnerTheme"
+                        android:textColor="@color/white"
+                        />
+
+                    <ImageView
+                        android:id="@+id/tv_or"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_alignTop="@+id/et_workout_time"
+                        android:layout_alignBottom="@+id/et_workout_time"
+                        android:layout_toEndOf="@+id/et_workout_time"
+                        android:src="@drawable/ic_or"
+                        android:visibility="visible"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_workout_distance"
+                        android:layout_width="@dimen/_80sdp"
+                        android:minHeight="@dimen/_26sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_or"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bg_new_input_text"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:inputType="text"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerDistance"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_toEndOf="@+id/tv_or"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_4dp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:paddingStart="@dimen/_2sdp"
+                        style="@style/SpinnerTheme"
+                        android:gravity="center"
+                        android:src="@drawable/ic_down" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_workout_rest"
+                        android:layout_width="@dimen/_40sdp"
+                        android:minHeight="@dimen/_26sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/spinnerDistance"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bg_new_input_text"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:inputType="text"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerRest"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_toEndOf="@+id/spinnerDistance"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:paddingStart="@dimen/_2sdp"
+                        style="@style/SpinnerTheme"
+                        android:gravity="center"
+                        android:src="@drawable/ic_down" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_edit_workout"
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_new_edit_workout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_save_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_new_save_workout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete_workout1"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:src="@drawable/ic_new_delete_workout"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_save_workout"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete_workout2"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:src="@drawable/ic_new_delete_workout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_edit_workout"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

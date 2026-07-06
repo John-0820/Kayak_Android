@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".ui.login.fragments.AvatarTraining">
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/gifImageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="-200dp"-->
+<!--        android:background="@drawable/bg_avatar_training"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fill"
+        app:use_controller="false" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_pace"
+        android:id="@+id/iv_pace"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@id/iv_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pace_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="00:00"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_pace"
+        app:layout_constraintStart_toEndOf="@+id/iv_pace"
+        app:layout_constraintTop_toTopOf="@+id/iv_pace" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_pace_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="/500M"
+        android:id="@+id/tv_pace_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pace_value"
+        android:textStyle="normal"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pace"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pace_unit"
+        app:layout_constraintStart_toStartOf="@+id/tv_pace_value"
+        android:id="@+id/view_pace"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bricolage_grotesque_regular"
+        android:text="@string/time"
+        android:id="@+id/tv_time"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/view_pace"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time_value"
+        app:layout_constraintStart_toStartOf="@+id/view_pace"
+        android:layout_marginLeft="@dimen/_2sdp"
+
+        android:textSize="@dimen/_8sdp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="00:00"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/view_pace"
+        android:textColor="@color/white"
+        android:id="@+id/tv_time_value"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:textStyle="normal"
+        android:textSize="@dimen/_16sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_kayak"
+        android:id="@+id/iv_distance"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_distance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_distance"
+        app:layout_constraintStart_toEndOf="@+id/iv_distance"
+        app:layout_constraintTop_toTopOf="@+id/iv_distance" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_distance_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="M"
+        android:id="@+id/tv_distance_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_distance_value"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_canoe"
+        android:id="@+id/iv_deadline"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distance_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deadline_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_deadline"
+        app:layout_constraintStart_toEndOf="@+id/iv_deadline"
+        app:layout_constraintTop_toTopOf="@+id/iv_deadline" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_deadline_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="M"
+        android:id="@+id/tv_deadline_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_deadline_value"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_cal"
+        android:id="@+id/iv_cal"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_deadline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_cal_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cal"
+        app:layout_constraintStart_toEndOf="@+id/iv_cal"
+        app:layout_constraintTop_toTopOf="@+id/iv_cal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_cal_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="KCAL"
+        android:id="@+id/tv_cal_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cal_value"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_bpm"
+        android:id="@+id/iv_bpm"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bpm_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bpm"
+        app:layout_constraintStart_toEndOf="@+id/iv_bpm"
+        app:layout_constraintTop_toTopOf="@+id/iv_bpm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_bpm_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="BPM"
+        android:id="@+id/tv_bpm_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_bpm_value"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_watts"
+        android:id="@+id/iv_watts"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bpm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_watt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_watts"
+        app:layout_constraintStart_toEndOf="@+id/iv_watts"
+        app:layout_constraintTop_toTopOf="@+id/iv_watts" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@+id/tv_watt_value"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="W"
+        android:id="@+id/tv_watts_unit"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_watt_value"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/ic_avt_graph"
+        android:id="@+id/iv_graph"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_watts"
+        app:layout_constraintStart_toStartOf="@+id/iv_watts"
+        app:tint="@color/white"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/powerChart"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_watts"
+        app:layout_constraintStart_toStartOf="@+id/iv_watts"
+        android:visibility="gone"
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/_120dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="@dimen/_240dp"
+        android:layout_height="@dimen/_80dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@+id/powerChart"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_16dp"
+        android:src="@drawable/ic_logo" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_wave"
+        android:id="@+id/iv_wave"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_watts"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:id="@+id/pin1"
+        android:visibility="invisible"
+        android:layout_marginTop="-12dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_pace_unit"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:id="@+id/pin2"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_value"
+        app:layout_constraintBottom_toTopOf="@+id/iv_cal"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pin3"
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:src="@drawable/ic_red_pin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_graph"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        app:layout_constraintTop_toTopOf="@+id/iv_graph"
+        app:layout_constraintVertical_bias="0.181" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:id="@+id/pin4"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_avatar_self"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:src="@drawable/ic_avatar_self"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pin7"
+        app:layout_constraintStart_toEndOf="@id/pin1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_goal_flag_self"
+        android:layout_width="@dimen/_20dp"
+        android:layout_height="@dimen/_20dp"
+        android:src="@drawable/ic_red_pin"
+        android:visibility="gone"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/iv_avatar_self"
+        app:layout_constraintStart_toStartOf="@+id/iv_avatar_self"
+        app:layout_constraintEnd_toEndOf="@+id/iv_avatar_self" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pin6"
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_64sdp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_white_pin"
+        app:layout_constraintBottom_toBottomOf="@id/pin7"
+
+        app:layout_constraintEnd_toEndOf="@+id/iv_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_white_pin"
+        android:id="@+id/pin7"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pin6"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_white_pin"
+        android:id="@+id/pin8"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_64sdp"
+        app:layout_constraintTop_toBottomOf="@id/pin7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pin6"
+        android:layout_marginBottom="@dimen/_8sdp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_avatar_comp"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_avatar_comp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pin11"
+        app:layout_constraintStart_toEndOf="@id/pin7" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_goal_flag_opponent"
+        android:layout_width="@dimen/_20dp"
+        android:layout_height="@dimen/_20dp"
+        android:src="@drawable/ic_red_pin"
+        android:visibility="gone"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/iv_avatar_comp"
+        app:layout_constraintStart_toStartOf="@+id/iv_avatar_comp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_avatar_comp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:id="@+id/pin9"
+        android:visibility="invisible"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_play_pause"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:id="@+id/pin10"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_value"
+        app:layout_constraintBottom_toTopOf="@+id/iv_cal"
+        app:layout_constraintStart_toStartOf="@+id/pin9"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pin11"
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:src="@drawable/ic_red_pin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_graph"
+        app:layout_constraintStart_toStartOf="@+id/pin9"
+        app:layout_constraintTop_toTopOf="@+id/iv_graph"
+        app:layout_constraintVertical_bias="0.181" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:src="@drawable/ic_red_pin"
+        android:visibility="invisible"
+        android:id="@+id/pin12"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pin9"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="@dimen/_84dp"
+        android:layout_height="@dimen/_84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_16dp"
+        android:src="@drawable/iv_stop" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_play_pause"
+        android:layout_width="@dimen/_84dp"
+        android:layout_height="@dimen/_84dp"
+        app:layout_constraintTop_toTopOf="@+id/iv_stop"
+        app:layout_constraintEnd_toStartOf="@+id/iv_stop"
+        android:padding="@dimen/_16dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_play" />
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="@dimen/_18dp"
+        android:layout_height="@dimen/_18dp"
+        android:id="@+id/iv_back"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_8dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_water"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pace_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:fontFamily="@font/bricolage_grotesque_regular"
+        android:text="Pace/500m"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pace_comp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:fontFamily="@font/bricolage_grotesque_regular"
+        android:text="00:00"
+        android:textColor="@color/golden_fizz"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pace_comp"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_pace_comp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pace_comp"
+        />
+
+    <!-- PLAYER 2 STATS (Right Side) -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_pace"
+        android:id="@+id/iv_pace_p2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/iv_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_pace_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="/500M"
+        android:visibility="gone"
+        android:id="@+id/tv_pace_unit_p2"
+        android:textColor="@color/white"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_pace_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_pace_p2"
+        android:textStyle="normal"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pace_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="00:00"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_pace_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pace_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_pace_p2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/gray"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pace_p2"
+        app:layout_constraintStart_toStartOf="@+id/tv_pace_value_p2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pace_unit_p2"
+        android:id="@+id/view_pace_p2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="00:00"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_time_p2"
+        app:layout_constraintTop_toBottomOf="@+id/view_pace_p2"
+        android:textColor="@color/white"
+        android:id="@+id/tv_time_value_p2"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:textStyle="normal"
+        android:textSize="@dimen/_16sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bricolage_grotesque_regular"
+        android:text="@string/time"
+        android:visibility="gone"
+        android:id="@+id/tv_time_p2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/view_pace_p2"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time_value_p2"
+        app:layout_constraintEnd_toEndOf="@+id/view_pace_p2"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:textSize="@dimen/_8sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_kayak"
+        android:id="@+id/iv_distance_p2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_value_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_distance_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="M"
+        android:visibility="gone"
+        android:id="@+id/tv_distance_unit_p2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_distance_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_distance_p2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_distance_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_distance_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_distance_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_distance_p2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_canoe"
+        android:id="@+id/iv_deadline_p2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distance_value_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_deadline_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="S"
+        android:visibility="gone"
+        android:id="@+id/tv_deadline_unit_p2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_deadline_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_deadline_p2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deadline_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_deadline_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_deadline_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_deadline_p2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_cal"
+        android:id="@+id/iv_cal_p2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_deadline_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cal_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="KCAL"
+        android:visibility="gone"
+        android:id="@+id/tv_cal_unit_p2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cal_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_cal_p2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_cal_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0.0"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cal_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cal_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_cal_p2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_bpm"
+        android:id="@+id/iv_bpm_p2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cal_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_bpm_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="BPM"
+        android:visibility="gone"
+        android:id="@+id/tv_bpm_unit_p2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bpm_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_bpm_p2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bpm_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bpm_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_bpm_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_bpm_p2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_36dp"
+        android:layout_height="@dimen/_36dp"
+        app:srcCompat="@drawable/ic_avt_watts"
+        android:id="@+id/iv_watts_p2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bpm_p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_watts_p2"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="W"
+        android:visibility="gone"
+        android:id="@+id/tv_watts_unit_p2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_watts_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_watts_p2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_watt_value_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fontFamily="@font/bebas_neue_"
+        android:text="0"
+        android:visibility="gone"
+        android:textColor="@color/golden_fizz"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_watts_p2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_watts_unit_p2"
+        app:layout_constraintTop_toTopOf="@+id/iv_watts_p2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
