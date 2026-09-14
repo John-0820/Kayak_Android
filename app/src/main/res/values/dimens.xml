@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_38dp">38dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_128dp">128dp</dimen>
+    <dimen name="_140dp">140dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_36dp">36dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_42dp">42dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="design_bottom_navigation_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="design_navigation_padding_top_default" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">0dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_64dp">64dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_360dp">360dp</dimen>
+    <dimen name="_280dp">280dp</dimen>
+    <dimen name="_240dp">240dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_182dp">182dp</dimen>
+    <dimen name="_184dp">184dp</dimen>
+    <dimen name="_188dp">188dp</dimen>
+    <dimen name="_312dp">312dp</dimen>
+    <dimen name="_220dp">220dp</dimen>
+    <dimen name="_112dp">112dp</dimen>
+    <dimen name="_72dp">72dp</dimen>
+    <dimen name="_84dp">84dp</dimen>
+    <dimen name="_96dp">96dp</dimen>
+    <dimen name="_56dp">56dp</dimen>
+    <dimen name="_110dp">110dp</dimen>
+    <dimen name="_320dp">320dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_46dp">46dp</dimen>
+    <dimen name="bottomhomemenu">10sp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+
+    <dimen name="number_picker_text_size">16sp</dimen>
+    <dimen name="time_picker_picker_width">140dp</dimen>
+    <dimen name="time_picker_picker_height">110dp</dimen>
+    <dimen name="time_picker_dialog_width">480dp</dimen>
+    <dimen name="create_program_card_height">80dp</dimen>
+    <dimen name="create_program_field_height">24dp</dimen>
+    <dimen name="create_program_add_button_width">72dp</dimen>
+    <dimen name="create_program_add_button_height">36dp</dimen>
+    <dimen name="workout_spinner_time_width">@dimen/_100sdp</dimen>
+    <dimen name="workout_spinner_distance_width">@dimen/_110sdp</dimen>
+    <dimen name="workout_spinner_rest_width">@dimen/_50sdp</dimen>
+    <dimen name="workout_spinner_padding_end">@dimen/_12sdp</dimen>
+
+    <dimen name="home_screen_container_width">@dimen/_400sdp</dimen>
+    <dimen name="home_screen_item_1_width">@dimen/_191sdp</dimen>
+    <dimen name="home_screen_item_2_width">@dimen/_388sdp</dimen>
+    <dimen name="home_screen_item_title_text_size">@dimen/_16sdp</dimen>
+    <dimen name="home_screen_item_desc_text_size">@dimen/_11sdp</dimen>
+    <dimen name="home_screen_item_margin_bottom">@dimen/_10dp</dimen>
+
+    <dimen name="bluetooth_screen_device_container_height">@dimen/_160sdp</dimen>
+    <dimen name="bluetooth_screen_scan_container_height">@dimen/_120sdp</dimen>
+    <dimen name="bluetooth_screen_scan_container_width">@dimen/_140sdp</dimen>
+    <dimen name="bluetooth_screen_scan_devices_width">@dimen/_320sdp</dimen>
+    <dimen name="bluetooth_screen_button_group_height">@dimen/_100sdp</dimen>
+    <dimen name="bluetooth_screen_title_text_size">@dimen/_10sdp</dimen>
+    <dimen name="bluetooth_screen_scan_text_size">@dimen/_10sdp</dimen>
+    <dimen name="bluetooth_screen_scan_text_padding_top">@dimen/_80sdp</dimen>
+    <dimen name="bluetooth_screen_item_text_size">@dimen/_8sdp</dimen>
+    <dimen name="bluetooth_screen_scanned_device_text_size">@dimen/_10ssp</dimen>
+
+    <dimen name="history_screen_item_date_text_size">@dimen/_10ssp</dimen>
+    <dimen name="history_screen_item_text_size">@dimen/_12ssp</dimen>
+    <dimen name="history_screen_item_title_text_size">@dimen/_10ssp</dimen>
+
+    <dimen name="avatar_training_screen_button_text_size">@dimen/_12ssp</dimen>
+    <dimen name="avatar_training_screen_start_button_text_size">@dimen/_12sdp</dimen>
+
+    <dimen name="quick_start_screen_start_button_text_size">@dimen/_12sdp</dimen>
+
+    <dimen name="ats_icon_size">@dimen/_15sdp</dimen>
+    <dimen name="ats_value_text_size">@dimen/_16sdp</dimen>
+    <dimen name="ats_unit_text_size">@dimen/_10sdp</dimen>
+    <dimen name="ats_pace_time_text_size">@dimen/_6sdp</dimen>
+    <dimen name="ats_pace_time_value_text_size">@dimen/_14sdp</dimen>
+    <dimen name="ats_kayak_margin_top">@dimen/_10sdp</dimen>
+    <dimen name="ats_canoe_margin_top">@dimen/_6sdp</dimen>
+    <dimen name="ats_cal_margin_top">@dimen/_10sdp</dimen>
+    <dimen name="ats_brand_width">@dimen/_180dp</dimen>
+    <dimen name="ats_brand_height">@dimen/_60dp</dimen>
+
+    <dimen name="item_training_text_1_size">@dimen/_12ssp</dimen>
+    <dimen name="item_training_text_2_size">@dimen/_14ssp</dimen>
+
+    <dimen name="dropdown_select_box_width">@dimen/_150sdp</dimen>
+    <dimen name="dropdown_select_box_height">@dimen/_60sdp</dimen>
+    <dimen name="dropdown_select_box_max_height">@dimen/_140sdp</dimen>
+    <dimen name="dropdown_select_text_size">@dimen/_20ssp</dimen>
+    <dimen name="quick_start_distance_dropdown_margin_top">@dimen/_128dp</dimen>
+    <dimen name="dropdown_icon_size">@dimen/_40sdp</dimen>
+    <dimen name="dropdown_icon_padding_top">@dimen/_20sdp</dimen>
+    <dimen name="dropdown_icon_margin_left">@dimen/_100sdp</dimen>
+    <dimen name="dropdown_icon_margin_top">@dimen/_10sdp</dimen>
+
+    <dimen name="item_distance_dropdown_divider_height">1dp</dimen>
+    <dimen name="item_spinner_distance_text_size">@dimen/_11ssp</dimen>
+
+    <dimen name="alert_dialog_msg_text_size">@dimen/_16ssp</dimen>
+    <dimen name="bg_time_picker_border_width">1dp</dimen>
+    <dimen name="bg_time_picker_border_radius">10dp</dimen>
+    <dimen name="avt_training_boat_self_margin_end">@dimen/_10ssp</dimen>
+    <dimen name="avt_training_boat_comp_margin_left">@dimen/_26ssp</dimen>
+</resources>

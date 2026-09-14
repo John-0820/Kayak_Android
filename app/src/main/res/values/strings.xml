@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">KayakPro</string>
+    <string name="email">Email</string>
+    <string name="pswd">Password</string>
+    <string name="forgot_pswd">Forgot Password?</string>
+    <string name="dnt_have">Dont\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="signin">Sign In</string>
+    <string name="incorrect_credentials">Credentials are incorrect</string>
+    <string name="both_field_required">Both fields are required</string>
+    <string name="empty_email">Email is required</string>
+    <string name="empty_otp">Otp is required</string>
+    <string name="empty_pswd">Password is required</string>
+    <string name="empty_cnfm_pswd">Confirm Password is required</string>
+    <string name="forgot_pswd_title">Forgot Password</string>
+    <string name="enter_email">Please enter your email id to receive your password.</string>
+    <string name="email_with_hint">Email with password hint</string>
+    <string name="not_exist">Email does not exist. \n Please sign up</string>
+    <string name="okay">Okay</string>
+    <string name="create_account">Create Account</string>
+    <string name="reset_pswd">Reset Password</string>
+    <string name="cnfm_pswd">Confirm Password</string>
+    <string name="opt_out">Opt out for our news letter</string>
+    <string name="already_have">Already have an account?</string>
+    <string name="already_connected">Already connected, If you want to add more device click on above refresh button</string>
+    <string name="login">Login</string>
+    <string name="loading">Loading...</string>
+    <string name="email_already_used">Email address already in use. Please login</string>
+    <string name="pswd_mismatch">Password does not match</string>
+    <string name="email_invalid">Email format is invalid</string>
+    <string name="minimum_length">Minimum password length is 6 characters</string>
+    <string name="select_machine">Select Machine</string>
+    <string name="kayak">Kayak</string>
+    <string name="canoe">Canoe</string>
+    <string name="dragon_boat">Dragon Boat</string>
+    <string name="outrigger">Outrigger</string>
+    <string name="swim">Swim</string>
+    <string name="ski">Ski</string>
+    <string name="row">Row</string>
+    <string name="sup">SUP</string>
+    <string name="bike">Bike</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="kayak_pro">KayakPro® HD Paddling Videos</string>
+    <string name="programmable">Programmable Training</string>
+    <string name="pro_videos">KayakPro® YouTube\nChannel</string>
+    <string name="quick_start">Quick Start</string>
+    <string name="quick_start_training">Quick Start Training</string>
+    <string name="last_program">Last Program Training</string>
+    <string name="avatar_training">Avatar Training</string>
+    <string name="start">Start</string>
+    <string name="prog_name">Program Name</string>
+    <string name="play_again">Play Again</string>
+    <string name="export">Export</string>
+    <string name="bpm">Bpm</string>
+    <string name="kmph">kmph</string>
+    <string name="or">Or</string>
+    <string name="distance">Distance</string>
+    <string name="speed">Speed</string>
+    <string name="stroke_rate">Stroke Rate</string>
+    <string name="calories">Calories</string>
+    <string name="pace_per">Pace/500m</string>
+    <string name="watts">Watts</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="time_elapsed">Time Elapsed</string>
+    <string name="time">Time</string>
+    <string name="five">05:00</string>
+    <string name="prog_training_list">Programmable Training List</string>
+    <string name="name_prog">Name the program</string>
+    <string name="name_workout">Name the workout</string>
+    <string name="details">Details</string>
+    <string name="edit">Edit</string>
+    <string name="save_exit">Save &amp; Exit</string>
+    <string name="add_workout">Add Segment</string>
+    <string name="wants_to_end">Wants to end the session?</string>
+    <string name="cancel">Cancel</string>
+    <string name="end">End</string>
+    <string name="done">Done</string>
+    <string name="session_completed">Session Completed.\nExport now or progress will be lost.</string>
+    <string name="session_completed_">Session Completed.</string>
+    <string name="you_reached">You reached maximum limit, delete an existing program.</string>
+    <string name="maximum_10">Maximum of 10 tasks can be added.</string>
+    <string name="minimum_10">Minimum 10 programs allowed</string>
+    <string name="want_to_delete">Want to delete the program?</string>
+    <string name="delete">Delete</string>
+    <string name="workout">Workout</string>
+    <string name="finding_devices">Finding Nearby Devices</string>
+    <string name="device_incompatible">Device Incompatible</string>
+    <string name="kinomap">Go to KinoMap</string>
+    <string name="connect_machine">Connect machine</string>
+    <string name="paired">Paired successfully. </string>
+    <string name="unpaired">No device connected</string>
+    <string name="passwored_reset_done">Password resset successfully. </string>
+    <string name="otp_sent">Otp sent successfully on %1$s. </string>
+    <string name="logout">Log Out</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="deactivate_confirm_title">Delete Account</string>
+    <string name="deactivate_confirm_message">Are you sure you want to delete your account?</string>
+    <string name="deactivate_confirm_btn">Delete</string>
+    <string name="deactivate_cancel_btn">Cancel</string>
+    <string name="deactivate_success">Account deleted successfully</string>
+    <string name="deactivate_failed">Failed to delete account. Please try again.</string>
+    <string name="check_bluetooth_setting">Check your Bluetooth settings and ensure your KayakPro® Bluetooth device is switched on..</string>
+    <string name="kino_not_installed">Kinomap app is not installed</string>
+    <string name="bluetooth_not_supported">Bluetooth is not supported on this device.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enable_bluetooth">Bluetooth is not enabled</string>
+    <string name="program_name">Program Name</string>
+    <string name="dummydate">Aug 2,2024|13:00</string>
+    <string name="otp">Otp</string>
+    <string name="five_hundred">500M</string>
+    <string name="starting_in">Starting in</string>
+    <string name="hard_paddling">Hard Paddling</string>
+    <string name="select_one_machine">Select Machine First.</string>
+    <string name="pace">Pace</string>
+
+    <!--    Units-->
+    <string name="speed_unit">"KPH</string>
+    <string name="pace_unit">/500m</string>
+    <string name="calories_unit">KCAL</string>
+    <string name="distance_unit">M</string>
+    <string name="stroke_unit">"S/MIN</string>
+    <string name="heart_unit">BPM</string>
+    <string name="watts_unit">W</string>
+    <string name="select">Select</string>
+    <string name="segment">Segment</string>
+    <string name="url_one">Magnificent Venice</string>
+    <string name="url_two">Florida Keys – Colony Key</string>
+    <string name="url_three">Newport Beach Outrigger California</string>
+    <string name="url_four">German Olympic Team – Indian Habor Beach Florida</string>
+    <string name="url_five">Brynich Aqueduct - Wales UK</string>
+    <string name="pace_for_boat">Pace For Boat</string>
+    <string name="select_minute">Select Minutes</string>
+    <string name="select_seconds">Select Seconds</string>
+    <string name="select_time">Select Time</string>
+    <string name="add_program">Nothing to display \n  Add Program using plus button</string>
+
+    <string-array name="sort_array">
+        <item>Sort By</item>
+        <item>Banana</item>
+        <item>Cherry</item>
+        <item>Date</item>
+        <item>Elderberry</item>
+    </string-array>
+    <string-array name="time_array">
+        <item>Select Time</item>
+        <item>1min</item>
+        <item>5min</item>
+        <item>10min</item>
+        <item>15min</item>
+        <item>20min</item>
+        <item>30min</item>
+        <item>45min</item>
+        <item>60min</item>
+    </string-array>
+    <string-array name="distance_array">
+        <item>Select Distance</item>
+        <item>250m</item>
+        <item>500m</item>
+        <item>1000m</item>
+        <item>2000m</item>
+        <item>3000m</item>
+        <item>5000m</item>
+        <item>7500m</item>
+        <item>10000m</item>
+    </string-array>
+    <string-array name="values_array">
+        <item>Watt</item>
+        <item>Calories</item>
+        <item>Speed</item>
+        <item>Heart Rate</item>
+        <item>Distance</item>
+        <item>Stroke Rate</item>
+        <item>Time</item>
+        <item>Time Elapsed</item>
+        <item>Pace</item>
+    </string-array>
+    <!-- $ size is 6 "00001800-0000-1000-8000-00805f9b34fb"
+     $ size is 6 "00001801-0000-1000-8000-00805f9b34fb"
+     $ size is 6 "a026ee01-0a7d-4ab3-97fa-f1500f9feb8b"
+     $ size is 6 "a026ee07-0a7d-4ab3-97fa-f1500f9feb8b"
+     $ size is 6 "00001826-0000-1000-8000-00805f9b34fb"
+     $ size is 6 "4b480001-6e6f-7274-6870-6f6c65656e67"-->
+
+
+</resources>

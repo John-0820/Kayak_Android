@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_selectmachine"
+        android:name="com.kayakpro.erg.ui.login.fragments.SelectMachine"
+        android:label=""
+        tools:layout="@layout/fragment_select_machine"/>
+    <fragment
+        android:id="@+id/nav_loading"
+        android:name="com.kayakpro.erg.ui.login.fragments.LoadingFragment"
+        android:label=""
+        tools:layout="@layout/fragment_loading"/>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kayakpro.erg.ui.login.fragments.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.kayakpro.erg.ui.login.fragments.HistoryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_quick_start_training"
+        android:name="com.kayakpro.erg.ui.login.fragments.QuickStartTraining"
+        android:label=""
+        tools:layout="@layout/fragment_quick_start_training"/>
+    <fragment
+        android:id="@+id/nav_avatartraining"
+        android:name="com.kayakpro.erg.ui.login.fragments.AvatarTraining"
+        android:label=""
+        tools:layout="@layout/fragment_avatar_training"/>
+    <fragment
+        android:id="@+id/nav_workout_fragment"
+        android:name="com.kayakpro.erg.ui.login.fragments.WorkoutFragment"
+        android:label=""
+        tools:layout="@layout/fragment_workout"/>
+    <fragment
+        android:id="@+id/nav_avatar"
+        android:name="com.kayakpro.erg.ui.login.fragments.AvatarFragment"
+        android:label=""
+        tools:layout="@layout/fragment_avatra"/>
+    <fragment
+        android:id="@+id/nav_avatar_without"
+        android:name="com.kayakpro.erg.ui.login.fragments.AvatarFragmentWithout"
+        android:label=""
+        tools:layout="@layout/fragment_avatra_without"/>
+    <fragment
+        android:id="@+id/avatar"
+        android:name="com.kayakpro.erg.ui.login.fragments.AvatarFragment"
+        android:label=""
+        tools:layout="@layout/fragment_avatra"/>
+    <fragment
+        android:id="@+id/nav_quick_start"
+        android:name="com.kayakpro.erg.ui.login.fragments.QuickStart"
+        android:label=""
+        tools:layout="@layout/fragment_quick_start"/>
+
+    <fragment
+        android:id="@+id/nav_pt"
+        android:name="com.kayakpro.erg.ui.login.fragments.PTFragment"
+        android:label=""
+        tools:layout="@layout/fragment_p_t"/>
+    <fragment
+        android:id="@+id/nav_pt_without"
+        android:name="com.kayakpro.erg.ui.login.fragments.PTFragmentWithout"
+        android:label=""
+        tools:layout="@layout/fragment_p_t_without"/>
+    <fragment
+        android:id="@+id/nav_create_program"
+        android:name="com.kayakpro.erg.ui.login.fragments.CreateProgramFragment"
+        android:label=""
+        tools:layout="@layout/fragment_create_program"/>
+    <fragment
+        android:id="@+id/nav_provideos"
+        android:name="com.kayakpro.erg.ui.login.fragments.ProVideoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_pro_video"/>
+  <!--
+      <fragment
+          android:id="@+id/nav_term"
+          android:name="com.biocube.bioaccess.ui.comman_view.privacy_terms.PrivacyPolicyFragment"
+          android:label=""
+          tools:layout="@layout/fragment_privacy_policy">
+          <argument
+              android:name="terms"
+              android:defaultValue="terms"
+              app:argType="string" />
+      </fragment>
+
+      <fragment
+          android:id="@+id/nav_privacy"
+          android:name="com.biocube.bioaccess.ui.comman_view.privacy_terms.PrivacyPolicyFragment"
+          android:label=""
+          tools:layout="@layout/fragment_privacy_policy">
+          <argument
+              android:name="terms"
+              android:defaultValue="privacy"
+              app:argType="string" />
+      </fragment>
+
+
+      <fragment
+          android:id="@+id/nav_attandencecalendar"
+          android:name="com.biocube.bioaccess.ui.Employee.attandence.AttandenceHistoryFragment"
+          android:label="@string/attendance"
+          tools:layout="@layout/fragment_attandence_calendar" />
+
+      <fragment
+          android:id="@+id/nav_approval"
+          android:name="com.biocube.bioaccess.ui.Employee.approval.ApprovalViewPager"
+          android:label="@string/approval"
+          tools:layout="@layout/fragment_approval_view_pager" />
+      <fragment
+          android:id="@+id/nav_approval_all"
+          android:name="com.biocube.bioaccess.ui.Employee.approval.ApprovalAll"
+          android:label="@string/approval"
+          tools:layout="@layout/fragment_approval_all" />
+
+
+      <fragment
+          android:id="@+id/nav_profile"
+          android:name="com.biocube.bioaccess.ui.comman_view.profile.ProfileFragment"
+          android:label=""
+          tools:layout="@layout/fragment_profile" />
+
+      <fragment
+          android:id="@+id/newLeaveFragment"
+          android:name="com.biocube.bioaccess.ui.Employee.leaveManagment.ApplyLeaveFragment"
+          android:label="@string/apply_leave"
+          tools:layout="@layout/fragment_new_leave" />
+
+      &lt;!&ndash;    <fragment&ndash;&gt;
+      &lt;!&ndash;        android:id="@+id/ViewLeaveFragment"&ndash;&gt;
+      &lt;!&ndash;        android:name="com.biocube.bioaccess.ui.Employee.view_leave.UserViewLeaveDeailsFragment"&ndash;&gt;
+      &lt;!&ndash;        android:label="@string/leave_detail"&ndash;&gt;
+      &lt;!&ndash;        tools:layout="@layout/fragment_view_leave" />&ndash;&gt;
+
+      &lt;!&ndash;    <fragment&ndash;&gt;
+      &lt;!&ndash;        android:id="@+id/ApproveViewLeaveDeailsFragment"&ndash;&gt;
+      &lt;!&ndash;        android:name="com.biocube.bioaccess.ui.Employee.view_leave.ApproveViewLeaveDeailsFragment"&ndash;&gt;
+      &lt;!&ndash;        android:label="@string/leave_detail"&ndash;&gt;
+      &lt;!&ndash;        tools:layout="@layout/fragment_approvel_view_leave" />&ndash;&gt;
+
+      <fragment
+          android:id="@+id/VisitorManagementFragment"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.visitorHistory.VisitorManagementFragment"
+          android:label="@string/visitor_management"
+          tools:layout="@layout/fragment_visitor_management" />
+
+
+      <dialog
+          android:id="@+id/nav_permission"
+          android:name="com.biocube.bioaccess.permission.PermissionFragment"
+          android:label="@string/menu_home"
+          tools:layout="@layout/fragment_perrmission" />
+
+      <dialog
+          android:id="@+id/nav_daterange"
+          android:name="com.biocube.bioaccess.dialog.DateRangePickerDialog"
+          android:label="@string/menu_home"
+          tools:layout="@layout/date_range_picker_dialog_layout" />
+
+
+      <dialog
+          android:id="@+id/AttendanceMarkedResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.AttendanceMarkedResultDialog"
+          tools:layout="@layout/attendance_marked_result_dialog" />
+
+
+      <dialog
+          android:id="@+id/ApplyLeaveResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ApplyLeaveResultDialog"
+          tools:layout="@layout/apply_leave_result_dialog" />
+
+      <dialog
+          android:id="@+id/VisitApproveResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.VisitApproveResultDialog"
+          tools:layout="@layout/visit_approv_result_dialog" />
+
+
+      <dialog
+          android:id="@+id/ReasonRejectionDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ReasonRejectionDialog"
+          tools:layout="@layout/rejection_reason_dialog_layout" />
+
+      <dialog
+          android:id="@+id/LeaveResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.LeaveResultDialog"
+          tools:layout="@layout/leave_result_dialog" />
+
+
+      <dialog
+          android:id="@+id/UserLeaveHistoryDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.UserLeaveHistoryDialog"
+          tools:layout="@layout/user_leave_history" />
+
+
+      <fragment
+          android:id="@+id/nav_leaves"
+          android:name="com.biocube.bioaccess.ui.Employee.leaveManagment.LeaveViewPager"
+          android:label="@string/leavemanagment"
+          tools:layout="@layout/fragment_leavemanagment_view_pager" />
+      <fragment
+          android:id="@+id/nav_attendance"
+          android:name="com.biocube.bioaccess.ui.Employee.attandence.AttendanceHistoryViewPager"
+          android:label="@string/attendance"
+          tools:layout="@layout/fragment_approval_view_pager" />
+
+
+      <fragment
+          android:id="@+id/nav_visitors"
+          android:name="com.biocube.bioaccess.ui.Employee.Emp_visitor.VisitorHistory"
+          android:label="@string/visitor_management"
+          tools:layout="@layout/fragment_visitor" />
+
+      <fragment
+          android:id="@+id/nav_notifications"
+          android:name="com.biocube.bioaccess.ui.Employee.notification.NotificationViewPager"
+          android:label="@string/notifications"
+          tools:layout="@layout/fragment_notification_view_pager" />
+
+
+      <dialog
+          android:id="@+id/ChangeRequestResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ChangeRequestResultDialog"
+          tools:layout="@layout/change_request_result_dialog" />
+
+      <dialog
+          android:id="@+id/VisitProgressDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.VisitProgressDialog"
+          tools:layout="@layout/visit_progress_child_layout" />
+
+      <fragment
+          android:id="@+id/nav_face_authentication"
+          android:name="com.biocube.bioaccess.ui.Employee.face.FaceFaceAuthFragment"
+          android:label="@string/face_authentication"
+          tools:layout="@layout/fragment_face" />
+
+
+      <dialog
+          android:id="@+id/nav_logout"
+          android:name="com.biocube.bioaccess.ui.comman_view.Logout"
+          android:label="@string/logout"
+          tools:layout="@layout/fragment_logout" />
+
+      <fragment
+          android:id="@+id/nav_markface_attendance"
+          android:name="com.biocube.bioaccess.ui.Employee.face.MarkFaceAttendanceFragment"
+          android:label="@string/mark_attendance"
+          tools:layout="@layout/fragment_mark_face_attandance" />
+
+
+      <dialog
+          android:id="@+id/instructionVideo"
+          android:name="com.biocube.bioaccess.ui.Employee.fragment_dialog.InstructionVideoDialog"
+          tools:layout="@layout/popup_face_instsction" />
+
+      <fragment
+          android:id="@+id/id_verification_fragment"
+          android:name="com.biocube.bioaccess.ui.Employee.id_verification.IDVerificationFragment"
+          android:label="@string/id_verification"
+          tools:layout="@layout/fragment_id_verification" />
+
+      <dialog
+          android:id="@+id/nav_attendance_success"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.AttendanceSuccessDialog"
+          tools:layout="@layout/attendance_success_dialog" />
+
+      <fragment
+          android:id="@+id/nav_searchstaff"
+          android:name="com.biocube.bioaccess.ui.Employee.attandence.StaffSearch"
+          android:label=""
+          tools:layout="@layout/fragment_staff_search" />
+
+      <fragment
+          android:id="@+id/CaptureVenuePhotos"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.CaptureVenuePhotoFragment"
+          tools:layout="@layout/fragment_validate_tax_id" />
+
+      <fragment
+          android:id="@+id/validateTaxID"
+          android:name="com.biocube.bioaccess.ui.Employee.id_verification.ValidateTaxIdFragment"
+          android:label="@string/validate_id"
+          tools:layout="@layout/fragment_validate_tax_id" />
+
+      <dialog
+          android:id="@+id/ChekinValidateDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ChekinValidateDialog"
+          tools:layout="@layout/id_validated_dialog" />
+
+      <fragment
+          android:id="@+id/FaceCaptureFragment"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.FaceCaptureFragment"
+          tools:layout="@layout/fragment_validate_tax_id" />
+
+      <fragment
+          android:id="@+id/PurposeFragment"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.PurposeFragment"
+          android:label=""
+          tools:layout="@layout/fragment_capture_aadhaar" />
+
+      <fragment
+          android:id="@+id/nav_purposeactivity"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.PurposeViewPager"
+          android:label="@string/purpose"
+          tools:layout="@layout/fragment_purpose_view_pager" />
+
+      <dialog
+          android:id="@+id/nav_activity_submitDialog"
+          android:name="com.biocube.bioaccess.ui.visit.bottomsheet_dialog.SubmitActivityDialog"
+          tools:layout="@layout/submit_activity_dialog" />
+      <fragment
+          android:id="@+id/nav_dailyactivity"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.DailyActivity"
+          android:label="@string/dailyacvtivity"
+          tools:layout="@layout/fragment_daily_activity" />
+
+      <fragment
+          android:id="@+id/nav_dailytrackactivity"
+          android:name="com.biocube.bioaccess.ui.Employee.mark_activity.DailyActivityTrack"
+          android:label="@string/activitydetails"
+          tools:layout="@layout/fragment_daily_activity_track" />
+
+      <fragment
+          android:id="@+id/AadhaarSourceFragment"
+          android:name="com.biocube.bioaccess.ui.Employee.adhaar.AadhaarSourceFragment"
+          android:label=""
+          tools:layout="@layout/fragment_aadhaar_source" />
+
+      <fragment
+          android:id="@+id/createMpin"
+          android:name="com.biocube.bioaccess.ui.Employee.mpin.CreateMPIN"
+          android:label="@string/create_pin"
+          tools:layout="@layout/fragment_create_mpin" />
+
+      <fragment
+          android:id="@+id/resetMpin"
+          android:name="com.biocube.bioaccess.ui.Employee.mpin.ResetMPIN"
+          android:label="@string/reset_pin"
+          tools:layout="@layout/fragment_create_mpin" />
+
+      <dialog
+          android:id="@+id/PANVerficationDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.PANVerficationDialog"
+          tools:layout="@layout/pan_ver_dialog_layout" />
+
+      <dialog
+          android:id="@+id/RegistrationResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.RegistrationResultDialog"
+          tools:layout="@layout/email_result_dialog" />
+
+      <dialog
+          android:id="@+id/IDValidatedResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.IDValidatedResultDialog"
+          tools:layout="@layout/id_validated_dialog" />
+
+      <fragment
+          android:id="@+id/nav_language"
+          android:name="com.biocube.bioaccess.ui.comman_view.language.LanguageFragment"
+          android:label="@string/langugae"
+          tools:layout="@layout/fragment_language" />
+
+      <fragment
+          android:id="@+id/nav_change_pin"
+          android:name="com.biocube.bioaccess.ui.Employee.mpin.ResetMPIN"
+          android:label="@string/reset_pin"
+          tools:layout="@layout/fragment_create_mpin" />
+
+
+      <fragment
+          android:id="@+id/nav_feedback"
+          android:name="com.biocube.bioaccess.ui.comman_view.other.FeedbackFragment"
+          android:label="@string/feedback_contact"
+          tools:layout="@layout/fragment_feedback" />
+
+      <dialog
+          android:id="@+id/email_verify_dialog"
+          android:name="com.biocube.bioaccess.ui.visit.bottomsheet_dialog.VistorMobileVerifiedDialog"
+          tools:layout="@layout/mobile_verified" />
+
+      <dialog
+          android:id="@+id/AddVehicleDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.AddVehicleDialog"
+          tools:layout="@layout/add_vehicle_dialog_layout" />
+
+
+      <fragment
+          android:id="@+id/nav_visitor_id_verification"
+          android:name="com.biocube.bioaccess.ui.visit.id_verification.VistorIDVerificationFragment"
+          android:label="@string/id_verification"
+          tools:layout="@layout/fragment_vistor_id_verification" />
+
+      <fragment
+          android:id="@+id/id_detail_fragment"
+          android:name="com.biocube.bioaccess.ui.Employee.id_verification.ID_DetailFragment"
+          android:label="@string/id_detail"
+          tools:layout="@layout/fragment_id_detail" />
+
+
+      <fragment
+          android:id="@+id/SystemGeneratedID"
+          android:name="com.biocube.bioaccess.ui.Employee.id_verification.SystemGeneratedID"
+          android:label=""
+          tools:layout="@layout/fragment_system_generated_id" />
+
+      <fragment
+          android:id="@+id/create_visit"
+          android:name="com.biocube.bioaccess.ui.Employee.Emp_visitor.CreateVisit.CreateVisitFragment"
+          android:label="@string/create_visit"
+          tools:layout="@layout/fragment_create_visit" />
+
+      <fragment
+          android:id="@+id/nav_attendance_details"
+          android:name="com.biocube.bioaccess.ui.Employee.attandence.AttendanceDetails"
+          android:label="@string/attendance_details"
+          tools:layout="@layout/fragment_attendance_details" />
+
+      <fragment
+          android:id="@+id/nav_regularization"
+          android:name="com.biocube.bioaccess.ui.Employee.Regularization.RegularizationFragment"
+          android:label="@string/regularization"
+          tools:layout="@layout/fragment_regularization" />
+
+      <dialog
+          android:id="@+id/nav_visitor_req_dialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.VisitRequestResultDialog"
+          android:label="@string/menu_home"
+          tools:layout="@layout/request_raised_result_dialog" />
+      <fragment
+          android:id="@+id/nav_leave_details"
+          android:name="com.biocube.bioaccess.ui.Employee.leaveManagment.LeaveDetails"
+          android:label="@string/leave_detail"
+          tools:layout="@layout/fragment_leave_details" />
+
+      <fragment
+          android:id="@+id/nav_approval_details"
+          android:name="com.biocube.bioaccess.ui.Employee.approval.ApprovalDetails"
+          android:label="@string/approval"
+          tools:layout="@layout/fragment_approval_details" />
+
+      <fragment
+          android:id="@+id/nav_visit_home"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.CreateVisit.CreateVisitDetailFragment"
+          android:label=""
+          tools:layout="@layout/fragment_visit_details" />
+
+
+      <fragment
+          android:id="@+id/visiter_create_view"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.CreateVisit.VisiterViewCreateVisitFragment"
+          android:label="@string/create_visit"
+          tools:layout="@layout/fragment_create_visit2" />
+
+      <dialog
+          android:id="@+id/nav_visitorIDResultDialog"
+          android:name="com.biocube.bioaccess.ui.visit.bottomsheet_dialog.VisitorIDResultDialog"
+          android:label="@string/menu_home"
+          tools:layout="@layout/visitor_id_result_dialog" />
+
+      <fragment
+          android:id="@+id/nav_visitorManagementFragment"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.visitorHistory.VisitorManagementFragment"
+          android:label="@string/visitor_management"
+          tools:layout="@layout/fragment_visitor" />
+
+      <fragment
+          android:id="@+id/nav_VisitorMainFragment"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.visitorHistory.VisitorMainFragment"
+          android:label="@string/visit_logs"
+          tools:layout="@layout/fragment_attendance_logs" />
+
+      <fragment
+          android:id="@+id/nav_ViewVisitRequestFragment"
+          android:name="com.biocube.bioaccess.ui.Employee.Emp_visitor.ViewVisitRequest.ViewVisitRequestFragment"
+          android:label="@string/visit_request"
+          tools:layout="@layout/fragment_visit_request" />
+
+      <dialog
+          android:id="@+id/nav_OrganizatinBottomDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.organiz.OrganizatinBottomDialog"
+          android:label="@string/menu_home"
+          tools:layout="@layout/fragment_choose_organization" />
+      <dialog
+          android:id="@+id/nav_AddNewOrganizatinDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.organiz.AddNewOrganizatinDialog"
+          android:label="@string/menu_home"
+          tools:layout="@layout/new_organization_dialog" />
+
+
+      <fragment
+          android:id="@+id/nav_ViewVisitDetailsFragment"
+          android:name="com.biocube.bioaccess.ui.visit.VisitHome.visitorDetail.ViewVisitDetailsFragment"
+          android:label="@string/visit_request"
+          tools:layout="@layout/fragment_visit_detail_request" />
+
+
+      <fragment
+          android:id="@+id/nav_AccessPassFragment"
+          android:name="com.biocube.bioaccess.ui.visit.AccessPass.AccessPassFragment"
+          android:label="@string/access_pass"
+          tools:layout="@layout/fragment_access_pass" />
+
+      <fragment
+          android:id="@+id/nav_VisitDetails"
+          android:name="com.biocube.bioaccess.ui.comman_view.visit_details.VisitDetails"
+          android:label=""
+          tools:layout="@layout/fragment_visitor_visitdetails" />
+
+      <dialog
+          android:id="@+id/appUpdateDialog"
+          android:name="com.biocube.bioaccess.ui.comman_view.AppUpdateDialog"
+          tools:layout="@layout/fragment_appupdate_layout">
+
+      </dialog>
+
+      <activity
+          android:id="@+id/nav_rate"
+          android:label="Travel to PlayStore"
+          app:action="android.intent.action.VIEW"
+          app:data="@string/playstore_path"
+          app:targetPackage="com.android.vending" />
+
+      <dialog
+          android:id="@+id/licenceError"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.LicenceErrorDialog"
+          tools:layout="@layout/fragment_licence_exp_layout"></dialog>
+
+
+      <dialog
+          android:id="@+id/ErrorDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ErrorDialog"
+          tools:layout="@layout/error_result_dialog"></dialog>
+
+      <dialog
+          android:id="@+id/CancleLeaveReasionDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.LeaveCancelDialog"
+          tools:layout="@layout/rejection_leave" />
+
+      <dialog
+          android:id="@+id/RegularizationDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.RegularizationDialog"
+          tools:layout="@layout/regularization_dialog" />
+
+      <dialog
+          android:id="@+id/ResetPinResultDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ResetResultDialog"
+          tools:layout="@layout/email_result_dialog" />
+
+      <dialog
+          android:id="@+id/InternetErrorDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.InternetErrorDialog"
+          tools:layout="@layout/fragment_internet_layout" />
+
+      <dialog
+          android:id="@+id/ImagePickerDialog"
+          android:name="com.biocube.bioaccess.ui.Employee.bottomsheet_dialog.ImagePickerDialog"
+          tools:layout="@layout/image_picker_dialog"/>
+
+  -->
+</navigation>

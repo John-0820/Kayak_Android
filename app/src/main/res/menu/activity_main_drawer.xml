@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dhome"
+
+            android:iconTint="@color/white"
+            android:title="@string/home" />
+
+
+        <item
+            android:id="@+id/nav_dconnect_machine"
+
+            android:iconTint="@color/white"
+            android:title="@string/connect_machine" />
+
+
+        <item
+            android:id="@+id/nav_dhistory"
+
+            android:iconTint="@color/white"
+            android:title="@string/history" />
+
+        <item
+            android:id="@+id/nav_dprogrammable_training"
+
+            android:iconTint="@color/white"
+            android:title="@string/programmable" />
+
+        <item
+            android:id="@+id/nav_davatar_training"
+
+            android:iconTint="@color/white"
+            android:title="@string/avatar_training" />
+
+        <item
+            android:id="@+id/nav_dkino"
+            android:iconTint="@color/white"
+
+            android:title="@string/kinomap" />
+
+        <item
+            android:id="@+id/nav_dvideos"
+            android:iconTint="@color/white"
+            android:title="@string/kayak_pro" />
+
+
+        <item
+            android:id="@+id/nav_dlogout"
+
+            android:iconTint="@color/white"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/nav_ddeactivate"
+
+            android:iconTint="#FF0000"
+            android:title="@string/deactivate_account" />
+
+
+
+
+
+
+
+    </group>
+</menu>

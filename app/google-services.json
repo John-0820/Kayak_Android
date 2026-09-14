@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237460392458",
+    "project_id": "kayakpro-8455b",
+    "storage_bucket": "kayakpro-8455b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237460392458:android:e185c5bf213a5c0f52edf3",
+        "android_client_info": {
+          "package_name": "com.kayakpro.erg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP3z_1O2RqSKDKKxt8RLIevup1O-98L8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

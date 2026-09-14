@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="number_picker_text_size">22sp</dimen>
+    <dimen name="time_picker_picker_width">180dp</dimen>
+    <dimen name="time_picker_picker_height">220dp</dimen>
+    <dimen name="time_picker_dialog_width">540dp</dimen>
+    <dimen name="create_program_card_height">120dp</dimen>
+    <dimen name="create_program_field_height">40dp</dimen>
+    <dimen name="create_program_add_button_width">60dp</dimen>
+    <dimen name="create_program_add_button_height">30dp</dimen>
+    <dimen name="workout_spinner_time_width">@dimen/_80sdp</dimen>
+    <dimen name="workout_spinner_distance_width">@dimen/_80sdp</dimen>
+    <dimen name="workout_spinner_rest_width">@dimen/_40sdp</dimen>
+    <dimen name="workout_spinner_padding_end">@dimen/_12sdp</dimen>
+
+    <dimen name="home_screen_container_width">@dimen/_300sdp</dimen>
+    <dimen name="home_screen_item_1_width">@dimen/_141sdp</dimen>
+    <dimen name="home_screen_item_2_width">@dimen/_288sdp</dimen>
+    <dimen name="home_screen_item_title_text_size">@dimen/_9sdp</dimen>
+    <dimen name="home_screen_item_desc_text_size">@dimen/_5sdp</dimen>
+    <dimen name="home_screen_item_margin_bottom">@dimen/_24dp</dimen>
+
+    <dimen name="bluetooth_screen_device_container_height">@dimen/_120sdp</dimen>
+    <dimen name="bluetooth_screen_scan_container_height">@dimen/_90sdp</dimen>
+    <dimen name="bluetooth_screen_scan_container_width">@dimen/_110sdp</dimen>
+    <dimen name="bluetooth_screen_scan_devices_width">@dimen/_350sdp</dimen>
+    <dimen name="bluetooth_screen_button_group_height">@dimen/_140sdp</dimen>
+    <dimen name="bluetooth_screen_title_text_size">@dimen/_7sdp</dimen>
+    <dimen name="bluetooth_screen_scan_text_size">@dimen/_5sdp</dimen>
+    <dimen name="bluetooth_screen_scan_text_padding_top">@dimen/_60sdp</dimen>
+    <dimen name="bluetooth_screen_item_text_size">@dimen/_5sdp</dimen>
+    <dimen name="bluetooth_screen_scanned_device_text_size">@dimen/_5ssp</dimen>
+
+    <dimen name="history_screen_item_date_text_size">@dimen/_7ssp</dimen>
+    <dimen name="history_screen_item_text_size">@dimen/_10ssp</dimen>
+    <dimen name="history_screen_item_title_text_size">@dimen/_7ssp</dimen>
+
+    <dimen name="avatar_training_screen_button_text_size">@dimen/_8ssp</dimen>
+    <dimen name="avatar_training_screen_start_button_text_size">@dimen/_7sdp</dimen>
+
+    <dimen name="quick_start_screen_start_button_text_size">@dimen/_7sdp</dimen>
+
+    <dimen name="ats_icon_size">@dimen/_36dp</dimen>
+    <dimen name="ats_value_text_size">@dimen/_20sdp</dimen>
+    <dimen name="ats_unit_text_size">@dimen/_14sdp</dimen>
+    <dimen name="ats_pace_time_text_size">@dimen/_8sdp</dimen>
+    <dimen name="ats_pace_time_value_text_size">@dimen/_16sdp</dimen>
+    <dimen name="ats_kayak_margin_top">@dimen/_18sdp</dimen>
+    <dimen name="ats_canoe_margin_top">@dimen/_8sdp</dimen>
+    <dimen name="ats_cal_margin_top">@dimen/_12sdp</dimen>
+    <dimen name="ats_brand_width">@dimen/_240dp</dimen>
+    <dimen name="ats_brand_height">@dimen/_80dp</dimen>
+
+    <dimen name="item_training_text_1_size">@dimen/_8ssp</dimen>
+    <dimen name="item_training_text_2_size">@dimen/_10ssp</dimen>
+
+    <dimen name="dropdown_select_box_width">@dimen/_180sdp</dimen>
+    <dimen name="dropdown_select_box_height">@dimen/_75sdp</dimen>
+    <dimen name="dropdown_select_box_max_height">@dimen/_200sdp</dimen>
+    <dimen name="dropdown_select_text_size">@dimen/_30ssp</dimen>
+    <dimen name="quick_start_distance_dropdown_margin_top">188dp</dimen>
+    <dimen name="dropdown_icon_size">@dimen/_60sdp</dimen>
+    <dimen name="dropdown_icon_padding_top">@dimen/_40sdp</dimen>
+    <dimen name="dropdown_icon_margin_left">@dimen/_120sdp</dimen>
+    <dimen name="dropdown_icon_margin_top">0dp</dimen>
+
+    <dimen name="item_distance_dropdown_divider_height">2dp</dimen>
+    <dimen name="item_spinner_distance_text_size">@dimen/_7ssp</dimen>
+
+    <dimen name="alert_dialog_msg_text_size">@dimen/_11ssp</dimen>
+    <dimen name="bg_time_picker_border_width">2dp</dimen>
+    <dimen name="bg_time_picker_border_radius">15dp</dimen>
+    <dimen name="avt_training_boat_self_margin_end">-30dp</dimen>
+    <dimen name="avt_training_boat_comp_margin_left">0dp</dimen>
+</resources>

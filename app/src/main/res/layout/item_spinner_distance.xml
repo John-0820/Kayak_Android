@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_12sdp"
+    android:paddingRight="@dimen/_12sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:text="@string/time"
+    android:textColor="@color/white"
+    android:textSize="@dimen/item_spinner_distance_text_size"
+    android:fontFamily="@font/bricolage_grotesque_regular"
+    android:gravity="start|center_vertical"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:background="@android:color/transparent" />

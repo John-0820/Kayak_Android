@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragments"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/home_screen_container_width"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:id="@+id/cl_top">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingRight="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_screen_item_1_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/bg_new_black"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="Quick Start"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/home_screen_item_title_text_size" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Connect device and start training"
+                        android:textColor="#40FFFFFF"
+                        android:textSize="@dimen/home_screen_item_desc_text_size" />
+
+                    <Button
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:id="@+id/btn_quick_start"
+                        android:text="@string/start"
+                        android:textAllCaps="false"
+                        android:backgroundTint="#89F05B"
+                        android:textColor="@color/black"
+                        app:cornerRadius="@dimen/_8dp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="@dimen/home_screen_item_margin_bottom"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_screen_item_1_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/bg_new_black"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="Avatar training"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/home_screen_item_title_text_size" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Connect device and start training"
+                        android:textColor="#40FFFFFF"
+                        android:textSize="@dimen/home_screen_item_desc_text_size" />
+
+                    <Button
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:id="@+id/btn_avatar_training"
+                        android:text="@string/start"
+                        android:textAllCaps="false"
+                        android:backgroundTint="#89F05B"
+                        android:textColor="@color/black"
+                        app:cornerRadius="@dimen/_8dp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="@dimen/home_screen_item_margin_bottom"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingRight="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_screen_item_1_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/bg_new_black"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="Last program training"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/home_screen_item_title_text_size" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Connect device and start training"
+                        android:textColor="#40FFFFFF"
+                        android:textSize="@dimen/home_screen_item_desc_text_size" />
+
+                    <Button
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:id="@+id/btn_lpt"
+                        android:text="@string/start"
+                        android:textAllCaps="false"
+                        android:backgroundTint="#89F05B"
+                        android:textColor="@color/black"
+                        app:cornerRadius="@dimen/_8dp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="@dimen/home_screen_item_margin_bottom"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_screen_item_1_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/bg_new_black"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="Programmable training"
+                        android:includeFontPadding="false"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/home_screen_item_title_text_size" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Connect device and start training"
+                        android:textColor="#40FFFFFF"
+                        android:textSize="@dimen/home_screen_item_desc_text_size" />
+
+                    <Button
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:id="@+id/btn_programmable_training"
+                        android:text="@string/start"
+                        android:textAllCaps="false"
+                        android:backgroundTint="#89F05B"
+                        android:textColor="@color/black"
+                        app:cornerRadius="@dimen/_8dp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="@dimen/home_screen_item_margin_bottom"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingRight="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_screen_item_2_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/bg_new_black"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:text="\t KayakPro HD\nPaddling Videos"
+                        android:includeFontPadding="false"
+                        android:id="@+id/tv_title4"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/home_screen_item_title_text_size" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_unit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Connect device and start training"
+                        android:textColor="#40FFFFFF"
+                        android:textSize="@dimen/home_screen_item_desc_text_size" />
+
+                    <Button
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:id="@+id/btn_check_video"
+                        android:text="Check it"
+                        android:textAllCaps="false"
+                        android:backgroundTint="#89F05B"
+                        android:textColor="@color/black"
+                        app:cornerRadius="@dimen/_8dp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="@dimen/home_screen_item_margin_bottom"
+                        android:fontFamily="@font/bricolage_grotesque_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_program_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_program_name" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

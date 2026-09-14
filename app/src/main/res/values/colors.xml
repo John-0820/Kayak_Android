@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="golden_fizz">#CDFB47</color>
+    <color name="cod_gray">#191919</color>
+    <color name="scorpion">#5B5B5B</color>
+    <color name="red">#FF4B26</color>
+    <color name="blak_alpha">#60000000</color>
+    <color name="txt_color">#A5A1A1</color>
+   <color name="div_color">#75FFFFFF</color>
+   <color name="pswd_toggle">#ADADAD</color>
+   <color name="sp_item_bg">#2B2B2B</color>
+
+    <color name="gray">#808080</color>
+    <color name="green">#4CAF50</color>
+    <color name="avatar_tab_selected">#89F05B</color>
+    <color name="avatar_tab_unselected">#4A4A4A</color>
+</resources>

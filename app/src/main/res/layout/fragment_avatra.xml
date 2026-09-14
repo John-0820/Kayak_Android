@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_main"
+    tools:context=".ui.login.fragments.QuickStart">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/rl_avatar"
+    app:layout_constraintWidth_percent="0.8">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140dp"
+        android:id="@+id/ll_quick_start"
+        android:layout_marginTop="@dimen/_40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_280dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_or"
+            android:background="@drawable/bg_machine"
+            android:layout_marginLeft="@dimen/_32dp"
+            android:layout_marginRight="@dimen/_32dp"
+            android:layout_toStartOf="@+id/tv_or"
+            android:id="@+id/rl_time"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/bricolage_grotesque_regular"
+                android:text="@string/time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/bricolage_grotesque_regular"
+                android:text="@string/select"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_arrow"
+                android:padding="@dimen/_8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_down"/>
+
+
+
+            <!--  <Spinner
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentEnd="true"
+                  android:layout_centerVertical="true"
+                  android:theme="@style/SpinnerTheme"
+                  android:layout_toEndOf="@+id/tv_time_value"
+                  android:id="@+id/sp_time"/>-->
+            <!--            android:background="@drawable/ic_down"-->
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/or"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_280dp"
+            android:layout_height="@dimen/_180dp"
+            android:id="@+id/rl_distance"
+            android:layout_toEndOf="@+id/tv_or"
+            android:layout_marginLeft="@dimen/_32dp"
+            android:background="@drawable/bg_machine"
+            android:layout_marginRight="@dimen/_32dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/distance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bricolage_grotesque_regular"
+                android:layout_marginTop="@dimen/_8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/bricolage_grotesque_regular"
+                android:text="@string/select"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_distance_value"
+                android:theme="@style/SpinnerTheme"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"
+                android:id="@+id/sp_distance"/>
+            <!--            android:background="@drawable/ic_down"-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_arrow_d"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_down"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_280dp"
+        android:layout_height="@dimen/_140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/ll_quick_start"
+        android:layout_marginLeft="@dimen/_32dp"
+        android:layout_marginRight="@dimen/_32dp"
+        android:background="@drawable/bg_machine"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rl_pace"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8dp"
+            android:fontFamily="@font/bricolage_grotesque_regular"
+            android:text="@string/pace_for_boat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pace_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/bricolage_grotesque_regular"
+            android:text="@string/select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_pace_arrow"
+            android:padding="@dimen/_8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_down"/>
+
+
+
+        <!--  <Spinner
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:theme="@style/SpinnerTheme"
+              android:layout_toEndOf="@+id/tv_time_value"
+              android:id="@+id/sp_time"/>-->
+        <!--            android:background="@drawable/ic_down"-->
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/_320dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_pace"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:backgroundTint="@color/golden_fizz"
+        android:fontFamily="@font/bricolage_grotesque_regular"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:cornerRadius="@dimen/_8dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_start"
+        android:layout_alignEnd="@+id/btn_start"
+        android:layout_marginTop="@dimen/_160dp"
+        android:layout_marginEnd="@dimen/_100dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_distance"
+        android:layout_width="@dimen/dropdown_select_box_width"
+        android:layout_height="@dimen/dropdown_select_box_max_height"
+        android:layout_toEndOf="@+id/btn_start"
+        android:layout_marginTop="@dimen/_140dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_60dp"
+        android:background="@drawable/bg_dropdown"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        tools:listitem="@layout/item_distance_dropdown"
+        tools:itemCount="4"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_start"
+        android:layout_marginTop="@dimen/_140dp"
+        android:layout_alignStart="@+id/rl_pace"
+        android:layout_alignEnd="@+id/rl_pace"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_quick_start"
+        tools:listitem="@layout/item_spinner_distance"
+        tools:itemCount="4"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rv_program_history"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        tools:listitem="@layout/item_program_name"
+        tools:itemCount="2"
+        android:layout_marginStart="@dimen/_42dp"
+        android:layout_marginEnd="@dimen/_42dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
